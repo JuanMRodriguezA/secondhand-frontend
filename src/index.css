@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+
+@import "tailwindcss";
+
+:root {
+  --color-primaryBg: #F8F6FA;
+  --color-secondaryBg: #EEE9F4;
+  --color-accent: #FFb8d1;
+  --color-highlight: #E7CEE3;
+  --color-textPrimary: #2D1E3E;
+  --color-warning: #f25081;
+  --color-neutral: #E9D5FF;
+}
+
+
+body {
+  background-color: var(--color-primaryBg);
+  color: var(--color-textPrimary);
+  -webkit-font-smoothing: antialiased;
+}
+
+.font-logo {
+  font-family: "Playfair Display", serif;
+}
+
+.container {
+  max-width: 80rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.line-clamp-1 {
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.line-clamp-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.btn-gradient {
+  font-weight: 700;
+  border-radius: 9999px;
+  transition: all 0.3s;
+  background-image: linear-gradient(
+    to right,
+    var(--color-accent),
+    var(--color-highlight)
+  );
+  color: var(--color-textPrimary);
+}
+
+.btn-gradient:hover {
+  background-image: linear-gradient(
+    to right,
+    var(--color-highlight),
+    var(--color-accent)
+  );
+  color: white;
+}
+
+.glass-card {
+  backdrop-filter: blur(4px);
+  border-radius: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+.input-styled {
+  border-radius: 0.5rem;
+  padding: 0.75rem 1rem;
+  transition: all 0.2s;
+  border: 1px solid var(--color-neutral);
+  background-color: white;
+  color: var(--color-textPrimary);
+}
+
+.input-styled:focus {
+  outline: none;
+  border-color: transparent;
+  box-shadow: 0 0 0 2px var(--color-accent);
+}
+
+/* Scrollbar */
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--color-secondaryBg);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #e7cee3;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--color-accent);
+}
+
+/* En index.css */
+.bg-accent { background-color: #FFb8d1; }
+.bg-highlight { background-color: #E7CEE3; }
+.bg-warning { background-color: #f25081; }
+.bg-neutral { background-color: #E9D5FF; }
+.bg-nude { background-color: #E4B4C2; }
