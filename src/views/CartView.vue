@@ -88,7 +88,7 @@
 import { ref, computed } from 'vue'
 import { useCartStore } from '@/stores/cartStore'
 import { usePickupStore } from '@/stores/pickupPoints'
-import CartItem from '@/components/checkout/CartItem.vue'
+import CartItem from '@/components/checkout/Cartitem.vue'
 import DeliveryMethod from '@/components/checkout/DeliveryMethod.vue'
 import PaymentMethod from '@/components/checkout/PaymentMethod.vue'
 
