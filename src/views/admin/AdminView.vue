@@ -213,6 +213,7 @@ async function activarNotificaciones() {
     if (token) {
       console.log("Token FCM obtenido:", token)
       alert("Notificaciones activadas correctamente")
+      alert(token)
     }
   } catch (error) {
     console.error("Error activando notificaciones:", error)
