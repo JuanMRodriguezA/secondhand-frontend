@@ -7,7 +7,7 @@
       <!-- Vista móvil -->
       <div class="flex md:hidden justify-between items-center">
         <!-- Logo -->
-        <router-link to="/" class="flex items-center group">
+        <router-link to="/admin" class="flex items-center group">
           <img src="../assets/logo.png" alt="ZOE Indumentaria"
             class="h-16 w-10 object-contain transition-all duration-500 group-hover:scale-105" />
         </router-link>
